@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>책 찾기 게임</title>
+<style>
+body { font-family:sans-serif; background:#f9f9f9; text-align:center; }
+.book { display:inline-block; width:100px; height:140px; margin:10px;
+        line-height:140px; font-size:20px; color:#fff; cursor:pointer; }
+.red { background:red; }
+.blue { background:blue; }
+#result { font-size:20px; margin-top:20px; }
+</style>
+</head>
+<body>
+
+<h1>📕 빨간 책을 찾아요</h1>
+
+<div class="book red" onclick="ok()">책</div>
+<div class="book blue" onclick="no()">책</div>
+<div class="book blue" onclick="no()">책</div>
+
+<div id="result"></div>
+
+<script>
+function ok(){
+  document.getElementById("result").innerHTML = "🎉 정답이에요!";
+}
+function no(){
+  document.getElementById("result").innerHTML = "😢 다시 찾아볼까요?";
+}
+</script>
+
+</body>
+</html>

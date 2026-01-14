@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>대출·반납 순서</title>
+<style>
+body { font-family:sans-serif; background:#eef; text-align:center; }
+button { font-size:18px; margin:10px; padding:10px; }
+#result { font-size:20px; margin-top:20px; }
+</style>
+</head>
+<body>
+
+<h1>📚 책 빌리는 순서를 골라요</h1>
+
+<button onclick="wrong()">책을 바로 가져간다</button>
+<button onclick="right()">사서 선생님께 보여준다</button>
+
+<div id="result"></div>
+
+<script>
+function right(){
+  document.getElementById("result").innerHTML =
+    "😊 맞아요! 먼저 사서 선생님께 보여줘요.";
+}
+function wrong(){
+  document.getElementById("result").innerHTML =
+    "😢 순서를 다시 생각해요.";
+}
+</script>
+
+</body>
+</html>

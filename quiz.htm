@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>도서관 OX 퀴즈</title>
+<style>
+body { font-family:sans-serif; background:#f4f6f8; text-align:center; }
+button { font-size:22px; margin:15px; padding:15px 30px; }
+#result { font-size:22px; margin-top:20px; }
+</style>
+</head>
+<body>
+
+<h1>⭕ ❌ 도서관 퀴즈</h1>
+<p>도서관에서는 뛰어도 된다.</p>
+
+<button onclick="wrong()">⭕</button>
+<button onclick="right()">❌</button>
+
+<div id="result"></div>
+
+<script>
+function right(){
+  document.getElementById("result").innerHTML = "👍 맞았어요!";
+}
+function wrong(){
+  document.getElementById("result").innerHTML = "😢 다시 생각해요.";
+}
+</script>
+
+</body>
+</html>

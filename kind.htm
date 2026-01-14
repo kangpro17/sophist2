@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>도서관 예절 게임</title>
+<style>
+body { font-family:sans-serif; background:#eef; text-align:center; }
+button { font-size:18px; margin:10px; padding:10px 20px; }
+#result { font-size:20px; margin-top:20px; }
+</style>
+</head>
+<body>
+
+<h1>📘 도서관에서는 어떻게 할까요?</h1>
+<p>맞는 행동을 눌러요</p>
+
+<button onclick="check(true)">조용히 책 읽기</button>
+<button onclick="check(false)">큰 소리로 뛰기</button>
+
+<div id="result"></div>
+
+<script>
+function check(isGood){
+  document.getElementById("result").innerHTML =
+    isGood ? "😊 잘했어요! 도서관에서는 조용히 해요."
+           : "😢 다시 생각해볼까요?";
+}
+</script>
+
+</body>
+</html>
